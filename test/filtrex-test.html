@@ -103,7 +103,7 @@ tests({
         eq(0, compileExpression('foo in ("aa", "bb")')({foo:'c'}));
         eq(0, compileExpression('foo not in ("aa", "bb")')({foo:'aa'}));
         eq(1, compileExpression('foo not in ("aa", "bb")')({foo:'cc'}));
-        eq('ccaa', compileExpression('foo + "aa"')({foo:'cc'}));
+        eq('cca', compileExpression('foo + "aa"')({foo:'cc'}));
     },
 
     'regexp test': function() {
